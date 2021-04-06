@@ -6,16 +6,6 @@
 The goal of this project was to create a Docker image/container that works as a full web server. Here I used the LEMP stack (Linux (Debian:Buster), Nginx, MySQL (MariaDB), and PHP) and have also included Wordpress for building the front-end of the website and phpMyAdmin to access the database. 
 
 
-
- - In order to test the project, you can download the repo and then run the following command from the root directory:
-   - `docker build . -t ft_server`
- - The next step is to run the container. To achieve this, run the following command:
-   - `docker container run --name my_container -t -d -p 8080:80 -p 443:443 ft_server`
- - Autoindex is set to ON automatically, if you wish to disable run the following command:
-     - `docker exec -d my_container /autoindex_off.sh`
- - To set Autoindex back to ON, run the following command:
-     - `docker exec -d my_container /autoindex_off.sh`
-
 ### Building the Image
  - In order to test the project, you can download the repo and then run the following command from the root directory:
    - `docker build . -t ft_server`
